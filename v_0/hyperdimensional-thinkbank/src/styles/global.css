@@ -1,0 +1,93 @@
+@import './variables.css';
+
+/* 全局重置及基础样式 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+header {
+  background: var(--primary-color);
+  padding: var(--header-padding);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+header img.logo {
+  height: 40px;
+}
+
+.hero {
+  background: url('assets/images/backgrounds/sample-background.jpg') center/cover no-repeat;
+  padding: var(--hero-padding);
+  text-align: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: var(--hero-font-size);
+  margin: 0 0 20px;
+}
+
+.hero p {
+  font-size: var(--hero-subtitle-size);
+  margin-bottom: 30px;
+}
+
+.hero a.btn {
+  display: inline-block;
+  background: var(--secondary-color);
+  color: #fff;
+  padding: var(--btn-padding);
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: var(--btn-font-size);
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background: #fff;
+}
+
+.feature {
+  text-align: center;
+  width: 30%;
+}
+
+.feature img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 20px;
+}
+
+.feature h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1em;
+  color: #666;
+}
+
+footer {
+  background: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}

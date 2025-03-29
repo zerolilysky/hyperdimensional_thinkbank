@@ -1,0 +1,17 @@
+:root {
+    /* 基本颜色 */
+    --primary-color: #283E51;
+    --secondary-color: #56ab2f;
+    --background-color: #f0f0f0;
+    --text-color: #333;
+  
+    /* 字体及间距 */
+    --font-family: 'Montserrat', sans-serif;
+    --header-padding: 10px 20px;
+    --hero-padding: 60px 20px;
+    --hero-font-size: 3em;
+    --hero-subtitle-size: 1.2em;
+    --btn-padding: 12px 24px;
+    --btn-font-size: 1em;
+  }
+  

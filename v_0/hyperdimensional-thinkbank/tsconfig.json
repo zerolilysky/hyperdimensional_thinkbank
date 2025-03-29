@@ -1,0 +1,45 @@
+
+{
+    "compilerOptions": {
+      // 编译到 ES2020 级别的 JavaScript
+      "target": "ES2020",
+      // 使用 ESNext 模块系统 (适合现代打包工具)
+      "module": "ESNext",
+      // 指定需要加载的标准库
+      // 这里包含 DOM API 与 ES2020 特性
+      "lib": ["DOM", "ES2020"],
+  
+      // React 17+ 通常使用 "react-jsx" 或 "react-jsxdev"
+      "jsx": "react-jsx",
+  
+      // TypeScript 严格模式，可捕获更多潜在错误
+      "strict": true,
+  
+      // 解析模块时使用 Node.js 方式
+      "moduleResolution": "node",
+  
+      // 允许从 'node_modules' 中 import 默认导出
+      "esModuleInterop": true,
+  
+      // 跳过对声明文件 (.d.ts) 的类型检查，减少编译报错
+      "skipLibCheck": true,
+  
+      // 强制文件名大小写一致
+      "forceConsistentCasingInFileNames": true,
+  
+      // 解析 .json 文件
+      "resolveJsonModule": true,
+  
+      // 只编译每个文件，而不生成全局类型信息
+      "isolatedModules": true,
+  
+      // 显式加载 Node.js 类型声明 (process、__dirname 等)
+      "types": ["node"]
+    },
+    // 需要编译的目录
+    "include": ["src", "server"],
+    // 排除不需要编译的目录
+    "exclude": ["node_modules"]
+}
+  
+  
