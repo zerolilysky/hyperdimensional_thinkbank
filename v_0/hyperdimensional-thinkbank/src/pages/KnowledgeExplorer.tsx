@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useKnowledge } from '../hooks/useKnowledge';
+import NodeList from '../components/knowledge/NodeList';
 
 const KnowledgeExplorer: React.FC = () => {
+  const { nodes, fetchNodes } = useKnowledge();
+
+  useEffect(() => {
+    fetchNodes();
+  }, [fetchNodes]);
+
   return (
-    <div>
-      <h1>知识探索</h1>
-      <p>此处将放置知识浏览、节点可视化或搜索功能...</p>
-      {/* 你可以在此处添加知识星系图、搜索栏等组件 */}
+    <div className="knowledge-explorer">
+      {/* 这里将 nodes 通过 props 传给 NodeList */}
+      <NodeList nodes={nodes} />
     </div>
   );
 };

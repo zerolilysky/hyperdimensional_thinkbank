@@ -26,11 +26,13 @@
   
       // 强制文件名大小写一致
       "forceConsistentCasingInFileNames": true,
+
+     
   
       // 解析 .json 文件
       "resolveJsonModule": true,
   
-      // 只编译每个文件，而不生成全局类型信息
+      // 编译每个文件，而不生成全局类型信息
       "isolatedModules": true,
   
       // 显式加载 Node.js 类型声明 (process、__dirname 等)
@@ -42,4 +44,4 @@
     "exclude": ["node_modules"]
 }
   
-  
+

@@ -1,14 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { useKnowledge } from '../hooks/useKnowledge';
+import KnowledgeNode from '../components/knowledge/KnowledgeNode';
+import KnowledgeReply from '../components/knowledge/KnowledgeReply';
 
 const NodeDetail: React.FC = () => {
-  const { id } = useParams();  // 通过路由参数获取节点ID
+  const { id } = useParams<{ id: string }>();
+  const { nodes, fetchNodes } = useKnowledge();
+  const [node, setNode] = useState<any>(null);
+
+  useEffect(() => {
+    const loadNode = async () => {
+      await fetchNodes();
+      const found = nodes.find(n => n._id === id);
+      setNode(found);
+    };
+    loadNode();
+  }, [id, fetchNodes, nodes]);
+
+  if (!node) return <div>加载中...</div>;
 
   return (
-    <div>
-      <h1>节点详情</h1>
-      <p>正在查看节点 ID: {id}</p>
-      {/* 在此处编写节点内容、回复、可视化等 */}
+    <div className="node-detail">
+      <KnowledgeNode nodeData={node} />
+      <KnowledgeReply replyData={node.replies} />
     </div>
   );
 };

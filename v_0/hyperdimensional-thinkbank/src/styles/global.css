@@ -31,7 +31,7 @@ header img.logo {
 }
 
 .hero {
-  background: url('assets/images/backgrounds/sample-background.jpg') center/cover no-repeat;
+  background: url('/public/assets/images/backgrounds/sample-background.jpg') center/cover no-repeat;
   padding: var(--hero-padding);
   text-align: center;
   color: #fff;
