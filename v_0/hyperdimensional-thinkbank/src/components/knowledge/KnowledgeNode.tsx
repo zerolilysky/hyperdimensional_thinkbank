@@ -1,7 +1,7 @@
 // src/components/knowledge/KnowledgeNode.tsx
 import React from 'react';
 import { KnowledgeNodeProps } from '../../types/knowledge';
-import './KnowledgeNode.css'; // 如有需要，可自定义样式
+//import './KnowledgeNode.css'; // 如有需要，可自定义样式
 
 const KnowledgeNode: React.FC<KnowledgeNodeProps> = ({ nodeData, onClick }) => {
   return (

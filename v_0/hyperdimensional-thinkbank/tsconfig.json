@@ -4,7 +4,8 @@
       // 编译到 ES2020 级别的 JavaScript
       "target": "ES2020",
       // 使用 ESNext 模块系统 (适合现代打包工具)
-      "module": "ESNext",
+      // 修改模块系统为 CommonJS（Node.js 默认使用）
+      "module": "CommonJS",
       // 指定需要加载的标准库
       // 这里包含 DOM API 与 ES2020 特性
       "lib": ["DOM", "ES2020"],

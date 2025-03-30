@@ -4,7 +4,7 @@
   "description": "超维智库平台项目",
   "scripts": {
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
-    "dev:server": "ts-node-dev --respawn --transpileOnly server/index.ts",
+    "dev:server": "ts-node-dev --respawn --transpile-only server/index.ts",
     "build:server": "tsc -p tsconfig.json",
     "start:server": "node dist/server/index.js",
     "dev:client": "react-scripts start",
@@ -12,9 +12,13 @@
     "start": "concurrently \"npm run dev:server\" \"npm run dev:client\""
   },
   "dependencies": {
+    "axios": "^1.8.4",
     "cors": "^2.8.5",
+    "d3": "^7.9.0",
+    "d3-force": "^3.0.0",
     "dotenv": "^16.0.0",
     "express": "^4.18.2",
+    "mongodb": "^6.15.0",
     "mongoose": "^6.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -22,6 +26,7 @@
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
+    "@types/d3": "^7.4.3",
     "@types/express": "^5.0.1",
     "@types/node": "^22.13.14",
     "@types/react": "^19.0.12",

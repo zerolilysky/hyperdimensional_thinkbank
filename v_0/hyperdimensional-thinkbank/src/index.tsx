@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import './styles/global.css'; // 引入全局样式
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppRouter from './router';  // 导入 AppRouter
+import './styles/global.css';
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
@@ -10,6 +11,8 @@ if (!rootElement) {
 
 ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <AppRouter />
+    </Router>
   </React.StrictMode>
 );
