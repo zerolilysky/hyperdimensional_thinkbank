@@ -8,10 +8,8 @@ const App: React.FC = () => {
       {/* 头部区域 */}
       <header>
         <nav>
-          <div className="logo-container">
-            <Link to="/">
-              <img src="assets/icons/academic.svg" alt="超维智库 Logo" className="logo" />
-            </Link>
+          <div className="nav-links">
+          <Link to="/">主页 </Link>
           </div>
           <div className="nav-links">
             <Link to="/login">登录</Link>
@@ -22,9 +20,10 @@ const App: React.FC = () => {
       </header>
 
       {/* 主体内容 */}
-      <main>
+      <main className="main-container">
         <Outlet />
       </main>
+
 
       {/* 底部区域 */}
       <footer>
