@@ -9,7 +9,13 @@ import apiRouter from './routes/api.routes';
 const app = express();
 
 // 全局中间件
-app.use(cors());
+app.use(
+  cors({
+    origin: 'http://localhost:3000',
+    credentials: true,
+  })
+);
+
 app.use(express.json());
 
 // 挂载 API 路由（如果使用 api.routes.ts）
@@ -26,6 +32,12 @@ app.use((err: any, req: Request, res: Response, next: NextFunction) => {
   res.status(500).json({ error: 'Internal server error' });
 });
 
+
+
+
+
+
+
 // 启动函数
 async function startServer() {
   try {
@@ -41,5 +53,8 @@ async function startServer() {
     process.exit(1);
   }
 }
+
+
+
 
 startServer();

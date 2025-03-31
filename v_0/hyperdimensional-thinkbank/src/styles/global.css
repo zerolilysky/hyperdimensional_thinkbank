@@ -142,3 +142,203 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
+.node-creator-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+
+
+
+.node-creator {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 40px;
+  color: #fff;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+.node-creator h3 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.node-creator label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.95em;
+  color: #eee;
+}
+
+.node-creator input,
+.node-creator textarea {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 1em;
+  outline: none;
+}
+
+.node-creator input::placeholder,
+.node-creator textarea::placeholder {
+  color: #ccc;
+}
+
+.node-creator button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #003344;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.node-creator button:hover {
+  background-color: #f0f0f0;
+}
+
+
+.node-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.knowledge-node {
+  margin: 10px;
+}
+
+.circle-node {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  color: #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.circle-node:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+
+.node-viewer {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08); /* 半透明卡片 */
+  backdrop-filter: blur(10px); /* 毛玻璃效果 */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* 阴影 */
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.node-viewer h2 {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.node-viewer p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.node-viewer .close-btn {
+  display: block;
+  margin: 0 auto 20px;
+  background: #fff;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s ease;
+}
+
+.node-viewer .close-btn:hover {
+  background: #eee;
+}
+
+.node-viewer-card {
+  max-width: 500px;
+  margin: 30px auto;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.node-viewer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.node-viewer-header h2 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.node-viewer-content {
+  margin-top: 20px;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.delete-btn {
+  margin-top: 20px;
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.delete-btn:hover {
+  background: #d9363e;
+}
+

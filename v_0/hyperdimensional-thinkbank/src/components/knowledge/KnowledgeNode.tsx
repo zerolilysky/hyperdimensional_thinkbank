@@ -1,20 +1,20 @@
-// src/components/knowledge/KnowledgeNode.tsx
 import React from 'react';
-import { KnowledgeNodeProps } from '../../types/knowledge';
-//import './KnowledgeNode.css'; // 如有需要，可自定义样式
+import { Link } from 'react-router-dom';
+import { KnowledgeNode as  KnowledgeNodeType } from '../../types/knowledge';
 
-const KnowledgeNode: React.FC<KnowledgeNodeProps> = ({ nodeData, onClick }) => {
+type Props = {
+  nodeData: KnowledgeNodeType;
+  onClick?: () => void;
+};
+
+
+const KnowledgeNode: React.FC<Props> = ({ nodeData, onClick }) => {
   return (
-    <div className="knowledge-node" onClick={onClick}>
-      <h2>{nodeData.title}</h2>
-      <p>{nodeData.content}</p>
-      <div className="tags">
-        {nodeData.tags.map(tag => (
-          <span key={tag} className="tag">{tag}</span>
-        ))}
-      </div>
+    <div className="circle-node" onClick={onClick}>
+      <strong>{nodeData.title}</strong>
     </div>
   );
 };
+
 
 export default KnowledgeNode;

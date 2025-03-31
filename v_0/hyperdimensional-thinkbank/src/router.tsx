@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import KnowledgeExplorer from './pages/KnowledgeExplorer';
 import NodeDetail from './pages/NodeDetail';
+import NodeViewer from './components/knowledge/NodeViewer';
 
 const AppRouter: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const AppRouter: React.FC = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/knowledge-explorer" element={<KnowledgeExplorer />} />
         <Route path="/node/:id" element={<NodeDetail />} />
+        
       </Route>
     </Routes>
   );
